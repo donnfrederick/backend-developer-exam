@@ -1,0 +1,91 @@
+.item-container {
+  width: 1350px;
+  margin: 4rem auto;
+  background: #fff;
+  border-radius: 7px;
+  padding: 3rem 2rem;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modals {
+  background: white;
+  border-radius: 8px;
+  width: 500px;
+  max-width: 100%;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-btn {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-body {
+  margin-top: 10px;
+}
+
+.toast-message {
+  background-color: #19A7AF !important;
+  /* color: #19A7AF !important; */
+  font-weight: bold;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1031;
+}
+
+.toast-error-message {
+  background-color: #DC3545 !important;
+  /* color: #19A7AF !important; */
+  font-weight: bold;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1031;
+}
+
+.toast-message button, .toast-error-message button {
+  border: none;
+  background: none;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+}
